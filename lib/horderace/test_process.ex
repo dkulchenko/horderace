@@ -13,7 +13,7 @@ defmodule Horderace.TestProcess do
         {:ok, pid}
 
       {:error, {:already_started, _pid}} ->
-        Logger.info(" #{__MODULE__} already started in cluster")
+        Logger.info("#{__MODULE__} already started in cluster")
         :ignore
     end
   end

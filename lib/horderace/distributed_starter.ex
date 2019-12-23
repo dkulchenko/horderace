@@ -23,7 +23,7 @@ defmodule Horderace.DistributedStarter do
   end
 
   def ensure_child_started(:ignore, process_name) do
-    Logger.info("#{process_name} reported :ignore (likely already started), skipping")
+    Logger.info("#{process_name} reported :ignore (already started), skipping")
     :ok
   end
 
